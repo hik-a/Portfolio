@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. CHANGE PAGE TITLE HERE -->
+    <title>Twinscape Smart Hospitals – HLD | Iqra Kainat</title>
+    
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* === TEMPLATE STYLES (Reusable) === */
+        
+        /* Hero Section */
+        .project-hero {
+            padding: 120px 20px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .header-badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .p-badge { 
+            background: rgba(237, 191, 198, 0.1); 
+            color: var(--text-highlight); 
+            padding: 6px 14px; 
+            border-radius: 50px; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            border: 1px solid rgba(237, 191, 198, 0.2);
+        }
+
+        .p-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--text-highlight);
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+
+        .p-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-body);
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        /* Content Container */
+        .project-content {
+            max-width: 900px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
+
+        /* Info Card / Section Block */
+        .info-block {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            margin-bottom: 40px;
+            border: 1px solid rgba(175, 141, 134, 0.1);
+        }
+
+        .info-block h2 {
+            font-family: var(--font-heading);
+            color: var(--text-highlight);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(237, 191, 198, 0.1);
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-block p { color: var(--text-body); margin-bottom: 15px; }
+
+        /* Standard List Styling */
+        .info-block ul { list-style: none; padding: 0; }
+        .info-block li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-body);
+        }
+        .info-block li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--text-highlight);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* 2-Column Grid (For Tech Stacks) */
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .split-col h3 {
+            color: var(--text-highlight);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        /* Architecture Component Tags (Cloud Style) */
+        .component-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(175, 141, 134, 0.2);
+            color: var(--text-body);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .tech-badge:hover {
+            border-color: var(--text-highlight);
+            color: var(--text-highlight);
+            background: rgba(237, 191, 198, 0.05);
+        }
+
+        /* Disclaimer Box */
+        .note-box {
+            border-left: 3px solid var(--accent-medium);
+            background: rgba(95, 72, 66, 0.1);
+            padding: 25px;
+            font-style: italic;
+            color: rgba(175, 141, 134, 0.9);
+            margin-top: 40px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-highlight);
+            font-weight: 600;
+            margin-top: 50px;
+            padding: 10px 20px;
+            border: 1px solid rgba(237, 191, 198, 0.3);
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            background: var(--text-highlight);
+            color: var(--bg-primary);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .split-grid { grid-template-columns: 1fr; gap: 30px; }
+            .project-hero { padding-top: 100px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="header-placeholder"></nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="project-hero reveal blur-in">
+        <div class="header-badges">
+            <!-- Project Type Tags -->
+            <span class="p-badge">High-Level Design</span>
+            <span class="p-badge">Azure IoT</span>
+            <span class="p-badge">Healthcare</span>
+        </div>
+        
+        <!-- Project Title -->
+        <h1 class="p-title">Twinscape Smart Hospitals</h1>
+        
+        <!-- Project Subtitle -->
+        <p class="p-subtitle">
+            A comprehensive HLD for an integrated hospital management system utilizing Digital Twins and IoT to optimize patient flow and asset management.
+        </p>
+    </header>
+
+    <main class="project-content">
+        
+        <!-- 3. SECTION: Text Block -->
+        <div class="info-block reveal fade-up delay-100">
+            <h2>Executive Summary</h2>
+            <p>
+                Twinscape is designed to be a high-performance, resilient, and secure system that integrates real-time telemetry from hospital medical equipment with a 3D digital representation (Digital Twin). 
+            </p>
+            <p>
+                This allows administrators to monitor asset health, predict equipment failure, and optimize patient flow through data-driven insights.
+            </p>
+        </div>
+
+        <!-- 4. SECTION: Split Grid (Tech Stack) -->
+        <div class="info-block reveal fade-up delay-200">
+            <h2>System Tech Stack</h2>
+            <div class="split-grid">
+                <div class="split-col">
+                    <h3>Cloud Infrastructure</h3>
+                    <ul>
+                        <li>Azure IoT Hub (Data Ingestion)</li>
+                        <li>Azure Digital Twins (Modeling)</li>
+                        <li>Azure Functions (Serverless Logic)</li>
+                    </ul>
+                </div>
+                <div class="split-col">
+                    <h3>Data & Intelligence</h3>
+                    <ul>
+                        <li>CosmosDB (Real-time NoSQL)</li>
+                        <li>Power BI (Embedded Analytics)</li>
+                        <li>Stream Analytics (Hot-path)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. SECTION: Standard List -->
+        <div class="info-block reveal fade-up delay-300">
+            <h2>Security & Compliance</h2>
+            <ul>
+                <li><strong>Access Control:</strong> Token-based authentication with strict Role-Based Access (RBAC) to ensure HIPAA compliance.</li>
+                <li><strong>Data Encryption:</strong> End-to-end TLS/SSL for data in transit and AES-256 for data at rest.</li>
+                <li><strong>Disaster Recovery:</strong> High-availability architecture with daily automated backups and 30-day retention.</li>
+            </ul>
+        </div>
+
+        <!-- 6. SECTION: Architecture Components (Tag Cloud) -->
+        <div class="info-block reveal fade-up delay-300">
+            <h2>Architecture Components</h2>
+            <div class="component-tags">
+                <!-- Add your Tags/Components Here -->
+                <span class="tech-badge">Microservices</span>
+                <span class="tech-badge">IoT Edge</span>
+                <span class="tech-badge">Digital Twins</span>
+                <span class="tech-badge">Real-time Telemetry</span>
+                <span class="tech-badge">Azure Certified</span>
+                <span class="tech-badge">High Availability</span>
+                <span class="tech-badge">REST APIs</span>
+            </div>
+        </div>
+
+        <!-- 7. Confidentiality Note -->
+        <div class="note-box reveal fade-up delay-300">
+            <strong>Confidentiality Note:</strong> Detailed architecture diagrams, specific network peering configurations, and proprietary IP schemas are omitted to maintain system security and client confidentiality.
+        </div>
+
+        <a href="projects.html" class="back-link reveal fade-up delay-300">
+            ← Back to Portfolio
+        </a>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

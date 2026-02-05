@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR.005 – Procurement Process | Iqra Kainat</title>
+    
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* === TEMPLATE STYLES (Reusable) === */
+        .project-hero {
+            padding: 120px 20px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .header-badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .p-badge { 
+            background: rgba(237, 191, 198, 0.1); 
+            color: var(--text-highlight); 
+            padding: 6px 14px; 
+            border-radius: 50px; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            border: 1px solid rgba(237, 191, 198, 0.2);
+        }
+
+        .p-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--text-highlight);
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+
+        .p-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-body);
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        .project-content {
+            max-width: 900px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
+
+        .info-block {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            margin-bottom: 40px;
+            border: 1px solid rgba(175, 141, 134, 0.1);
+        }
+
+        .info-block h2 {
+            font-family: var(--font-heading);
+            color: var(--text-highlight);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(237, 191, 198, 0.1);
+            padding-bottom: 15px;
+        }
+
+        .info-block p { color: var(--text-body); margin-bottom: 15px; }
+        .info-block ul { list-style: none; padding: 0; }
+        .info-block li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-body);
+        }
+        .info-block li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--text-highlight);
+            font-weight: bold;
+        }
+
+        /* 2-Column Grid for Stages */
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .split-col h3 {
+            color: var(--text-highlight);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        .split-col h3:first-child { margin-top: 0; }
+
+        .component-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(175, 141, 134, 0.2);
+            color: var(--text-body);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .tech-badge:hover {
+            border-color: var(--text-highlight);
+            color: var(--text-highlight);
+            background: rgba(237, 191, 198, 0.05);
+        }
+
+        .note-box {
+            border-left: 3px solid var(--accent-medium);
+            background: rgba(95, 72, 66, 0.1);
+            padding: 25px;
+            font-style: italic;
+            color: rgba(175, 141, 134, 0.9);
+            margin-top: 40px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-highlight);
+            font-weight: 600;
+            margin-top: 50px;
+            padding: 10px 20px;
+            border: 1px solid rgba(237, 191, 198, 0.3);
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            background: var(--text-highlight);
+            color: var(--bg-primary);
+        }
+
+        @media (max-width: 768px) {
+            .split-grid { grid-template-columns: 1fr; gap: 30px; }
+            .project-hero { padding-top: 100px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="header-placeholder"></nav>
+
+    <!-- HERO SECTION -->
+    <header class="project-hero reveal blur-in">
+        <div class="header-badges">
+            <span class="p-badge">ISO 9001:2015</span>
+            <span class="p-badge">Supply Chain</span>
+            <span class="p-badge">Quality Control</span>
+        </div>
+        
+        <h1 class="p-title">PR.005 – Procurement Process</h1>
+        
+        <p class="p-subtitle">
+            Standard Operating Procedure defining an ISO 9001 compliant end-to-end global supply chain and quality control framework.
+        </p>
+    </header>
+
+    <main class="project-content">
+        
+        <!-- Objective -->
+        <div class="info-block reveal fade-up delay-100">
+            <h2>Standardization Objective</h2>
+            <p>
+                Developed and maintained a comprehensive procurement framework to ensure material availability, cost optimization, and full compliance with ISO 9001:2015 quality standards. 
+            </p>
+            <p>
+                This process governs everything from initial vendor selection and evaluation to incoming quality inspections and performance monitoring.
+            </p>
+        </div>
+
+        <!-- Process Stages (Split Grid) -->
+        <div class="info-block reveal fade-up delay-200">
+            <h2>Lifecycle Stages</h2>
+            <div class="split-grid">
+                <!-- Left Column: Planning & Sourcing -->
+                <div class="split-col">
+                    <h3>1. Requisition & Approval</h3>
+                    <ul>
+                        <li>Generation of Purchase Requisitions (PR) via ERP.</li>
+                        <li>Budget verification and tiered managerial approvals.</li>
+                    </ul>
+
+                    <h3>2. Sourcing & Selection</h3>
+                    <ul>
+                        <li>Floating RFQs/RFPs to the Approved Vendor List (AVL).</li>
+                        <li>Conducting Technical & Commercial Bid Evaluations.</li>
+                    </ul>
+
+                    <h3>3. Vendor Evaluation (ISO 8.4)</h3>
+                    <ul>
+                        <li>Periodic desktop and site audits for critical suppliers.</li>
+                        <li>Review of quality certifications and financial stability.</li>
+                    </ul>
+                    
+                    <h3>4. PO Issuance</h3>
+                    <ul>
+                        <li>Generation of Purchase Orders with standardized T&Cs.</li>
+                        <li>Lead-time commitment tracking.</li>
+                    </ul>
+                </div>
+
+                <!-- Right Column: Execution & Quality -->
+                <div class="split-col">
+                    <h3>5. Production & Expediting</h3>
+                    <ul>
+                        <li>Real-time tracking of high-priority orders.</li>
+                        <li>Weekly status reports and critical path management.</li>
+                    </ul>
+
+                    <h3>6. Logistics & Customs</h3>
+                    <ul>
+                        <li>Transportation coordination and global customs compliance.</li>
+                        <li>Management of shipping documents (Invoices, PL).</li>
+                    </ul>
+
+                    <h3>7. Incoming Quality (IQC)</h3>
+                    <ul>
+                        <li>Warehouse receipt verification and physical inspection.</li>
+                        <li>Handling Non-Conformance Reports (NCR) and CAPA.</li>
+                    </ul>
+
+                    <h3>8. Performance Monitoring</h3>
+                    <ul>
+                        <li>Quarterly KPI evaluation (delivery, quality).</li>
+                        <li>Strategic probation for non-performers.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Risk & Components -->
+        <div class="info-block reveal fade-up delay-300">
+            <h2>Risk & Compliance Protocols</h2>
+            <ul>
+                <li><strong>Currency Risk:</strong> Protocols for handling currency fluctuation in international orders.</li>
+                <li><strong>Environmental:</strong> Strict adherence to RoHS and REACH standards for material sourcing.</li>
+                <li><strong>Record Retention:</strong> 7-year retention policy for all procurement audit trails per statutory requirements.</li>
+            </ul>
+
+            <!-- Tags -->
+            <div class="component-tags">
+                <span class="tech-badge">ISO 9001:2015</span>
+                <span class="tech-badge">Vendor Management</span>
+                <span class="tech-badge">Internal Audit</span>
+                <span class="tech-badge">ERP / SAP</span>
+                <span class="tech-badge">Logistics</span>
+                <span class="tech-badge">CAPA Management</span>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="note-box reveal fade-up delay-300">
+            <strong>Note:</strong> This document is proprietary and is maintained as a core component of the organization’s ISO 9001 Quality Management System (QMS).
+        </div>
+
+        <a href="projects.html" class="back-link reveal fade-up delay-300">
+            ← Back to Portfolio
+        </a>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

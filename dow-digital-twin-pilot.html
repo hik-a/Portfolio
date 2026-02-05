@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Twin Pilot – DOW | Iqra Kainat</title>
+    
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* === TEMPLATE STYLES (Reusable) === */
+        .project-hero {
+            padding: 120px 20px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .header-badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .p-badge { 
+            background: rgba(237, 191, 198, 0.1); 
+            color: var(--text-highlight); 
+            padding: 6px 14px; 
+            border-radius: 50px; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            border: 1px solid rgba(237, 191, 198, 0.2);
+        }
+
+        .p-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--text-highlight);
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+
+        .p-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-body);
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        .project-content {
+            max-width: 900px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
+
+        .info-block {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            margin-bottom: 40px;
+            border: 1px solid rgba(175, 141, 134, 0.1);
+        }
+
+        .info-block h2 {
+            font-family: var(--font-heading);
+            color: var(--text-highlight);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(237, 191, 198, 0.1);
+            padding-bottom: 15px;
+        }
+
+        .info-block p { color: var(--text-body); margin-bottom: 15px; }
+        .info-block ul { list-style: none; padding: 0; }
+        .info-block li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-body);
+        }
+        .info-block li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--text-highlight);
+            font-weight: bold;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .split-col h3 {
+            color: var(--text-highlight);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        .split-col h3:first-child { margin-top: 0; }
+
+        .component-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(175, 141, 134, 0.2);
+            color: var(--text-body);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .tech-badge:hover {
+            border-color: var(--text-highlight);
+            color: var(--text-highlight);
+            background: rgba(237, 191, 198, 0.05);
+        }
+
+        .note-box {
+            border-left: 3px solid var(--accent-medium);
+            background: rgba(95, 72, 66, 0.1);
+            padding: 25px;
+            font-style: italic;
+            color: rgba(175, 141, 134, 0.9);
+            margin-top: 40px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-highlight);
+            font-weight: 600;
+            margin-top: 50px;
+            padding: 10px 20px;
+            border: 1px solid rgba(237, 191, 198, 0.3);
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            background: var(--text-highlight);
+            color: var(--bg-primary);
+        }
+
+        @media (max-width: 768px) {
+            .split-grid { grid-template-columns: 1fr; gap: 30px; }
+            .project-hero { padding-top: 100px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="header-placeholder"></nav>
+
+    <!-- HERO SECTION -->
+    <header class="project-hero reveal blur-in">
+        <div class="header-badges">
+            <span class="p-badge">Digital Twin</span>
+            <span class="p-badge">IoT Pilot</span>
+            <span class="p-badge">Facility Management</span>
+        </div>
+        
+        <h1 class="p-title">Digital Twin Pilot – DOW</h1>
+        
+        <p class="p-subtitle">
+            Developing a sophisticated digital replica for hospital infrastructure to monitor real-time environmental data and optimize facilities management.
+        </p>
+    </header>
+
+    <main class="project-content">
+        
+        <!-- Executive Summary -->
+        <div class="info-block reveal fade-up delay-100">
+            <h2>Executive Summary</h2>
+            <p>
+                Designed and documented a Digital Twin pilot for DOW University to monitor critical server room environments. The project bridged IoT hardware with a virtual representation to provide real-time visibility into power consumption, temperature, and human activity.
+            </p>
+        </div>
+
+        <!-- Implementation & Value (Split Grid) -->
+        <div class="info-block reveal fade-up delay-200">
+            <h2>Pilot Strategy</h2>
+            <div class="split-grid">
+                <!-- Left: Phases -->
+                <div class="split-col">
+                    <h3>Implementation Phases</h3>
+                    <ul>
+                        <li><strong>Hardware Ingestion:</strong> Sensor deployment and network calibration.</li>
+                        <li><strong>Twin Modeling:</strong> Mapping physical assets to digital logic layers (DTDL).</li>
+                        <li><strong>Observation:</strong> Two-week monitoring and performance evaluation period.</li>
+                        <li><strong>Reporting:</strong> Data analysis and strategic scaling recommendations.</li>
+                    </ul>
+                </div>
+
+                <!-- Right: Value -->
+                <div class="split-col">
+                    <h3>Business Value</h3>
+                    <ul>
+                        <li>Improved operational visibility and incident response time.</li>
+                        <li>Significant reduction in risk of critical infrastructure failure.</li>
+                        <li>Energy optimization and sustainability insights for management.</li>
+                        <li>Scalable foundation for intelligent, integrated hospital infrastructure.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Capabilities -->
+        <div class="info-block reveal fade-up delay-300">
+            <h2>Functional Capabilities</h2>
+            <ul>
+                <li>Real-time dashboards for environmental and power metrics.</li>
+                <li>Configurable alerts and automated emergency notifications.</li>
+                <li>Historical data analysis and trend reporting for energy usage.</li>
+                <li>Role-based access control for IT and facility maintenance teams.</li>
+                <li>Predictive maintenance insights based on sensor deviations.</li>
+            </ul>
+
+            <!-- Tag Cloud -->
+            <div class="component-tags">
+                <span class="tech-badge">Azure Digital Twins</span>
+                <span class="tech-badge">AWS IoT Core</span>
+                <span class="tech-badge">MQTT</span>
+                <span class="tech-badge">ESP32 / Raspberry Pi</span>
+                <span class="tech-badge">Grafana</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">InfluxDB</span>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="note-box reveal fade-up delay-300">
+            <strong>Note:</strong> Full pilot documentation and technical workflow specifications are available upon request, subject to confidentiality constraints.
+        </div>
+
+        <a href="projects.html" class="back-link reveal fade-up delay-300">
+            ← Back to Portfolio
+        </a>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqra Kainat | Technical Writer & Analyst</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Specific styles for Home Page Layout only -->
+    <style>
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Specifics */
+        .hero-section {
+            min-height: 90vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding: 100px 20px 60px; 
+        }
+
+        .hero-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: var(--text-highlight); /* Blue Glow */
+            opacity: 0.1;
+            filter: blur(100px);
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        h1.hero-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem); 
+            line-height: 1.15;
+            margin-bottom: 24px;
+        }
+
+        p.hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-body);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        /* Section Layouts */
+        .section-padding { padding: 100px 0; }
+        .section-header { margin-bottom: 60px; }
+        .section-title { font-size: clamp(2rem, 4vw, 3rem); margin-top: 10px; }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 30px;
+        }
+
+        .feature-card {
+            padding: 40px 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature-card h3 {
+            color: var(--text-highlight);
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        /* About Grid Layout */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .philosophy-card {
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            background: rgba(30, 41, 59, 0.4);
+            border-radius: var(--border-radius);
+        }
+
+        .tag-container { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+
+        @media (max-width: 992px) {
+            .feature-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .about-grid, .feature-grid { grid-template-columns: 1fr; gap: 40px; }
+            .section-header, .feature-card { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Modular Header -->
+    <nav id="header-placeholder"></nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal blur-in">
+                Bridging the Gap Between <br> Complex Science & People.
+            </h1>
+            <p class="hero-subtitle reveal fade-up delay-100">
+                I transform high-level technical jargon into actionable, human-centered documentation. From ISO compliance to Big Data proposals.
+            </p>
+            <div class="reveal fade-up delay-200">
+                <a href="projects.html" class="btn-primary">VIEW MY WORK</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <span class="story-badge">My Expertise</span>
+                <h2 class="section-title">Technical Precision.</h2>
+            </div>
+
+            <div class="feature-grid">
+                <!-- Card 1 -->
+                <div class="feature-card reveal fade-up delay-100">
+                    <h3>Documentation</h3>
+                    <p>User guides, SOPs, and API references built for clarity. I ensure high user adoption and seamless developer experiences.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card reveal fade-up delay-200">
+                    <h3>Analysis</h3>
+                    <p>Bridging the gap between stakeholder vision and technical implementation to ensure perfect project alignment.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card reveal fade-up delay-300">
+                    <h3>ISO Compliance</h3>
+                    <p>Standardizing processes for 9001 and 27001 certification with rigorous internal auditing and documentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MERGED ABOUT SECTION -->
+    <section class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Side: Narrative -->
+                <div class="reveal fade-up">
+                    <span class="story-badge">The Story</span>
+                    <h2 class="section-title" style="margin-bottom: 24px;">
+                        The Story Behind <br> The Documents
+                    </h2>
+                    <p style="margin-bottom: 20px;">
+                        My journey into Technical Writing wasn't traditional. With a foundational background in <strong>Biochemistry</strong>, 
+                        I developed a deep respect for precision and data.
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        As I moved into <strong>Project Management (MS)</strong>, I realized my true passion: transforming high-level technical 
+                        jargon into actionable, human-centered documentation.
+                    </p>
+                    <p>
+                        Currently, I am working with <strong>PLC Group</strong> as a Technical Writer, helping standardize software modules 
+                        and knowledge management systems using platforms like MediaWiki.
+                    </p>
+                </div>
+
+                <!-- Right Side: Philosophy -->
+                <div class="reveal fade-up delay-200 philosophy-card">
+                    <h3 style="color: var(--text-highlight); margin-bottom: 20px; font-size: 1.5rem;">My Philosophy</h3>
+                    <p style="font-style: italic; font-size: 1.1rem; color: var(--text-body); margin-bottom: 30px;">
+                        "If a developer or a stakeholder has to ask a question that should have been in the manual, my job isn't done. Documentation should be proactive, not reactive."
+                    </p>
+                    <div class="tag-container">
+                        <span class="story-badge">User Experience</span>
+                        <span class="story-badge">Strategic Vision</span>
+                        <span class="story-badge">Analytical Rigor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modular Footer -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- JS Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Iqra Kainat</title>
+    
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .skills-header {
+            padding: 120px 20px 60px;
+            text-align: center;
+        }
+
+        .skills-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            color: var(--text-highlight);
+            margin-bottom: 20px;
+        }
+
+        .skills-grid {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            padding: 0 20px 80px;
+        }
+
+        .skill-card {
+            background: var(--bg-secondary);
+            border: 1px solid rgba(175, 141, 134, 0.1);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--text-highlight);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .skill-category-title {
+            font-family: var(--font-heading);
+            color: var(--text-highlight);
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background: rgba(237, 191, 198, 0.05);
+            border: 1px solid rgba(237, 191, 198, 0.2);
+            color: var(--text-body);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .skill-card:hover .skill-tag {
+            background: rgba(237, 191, 198, 0.1);
+            color: var(--text-highlight);
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="header-placeholder"></nav>
+
+    <header class="skills-header">
+        <h1 class="skills-title reveal blur-in">Technical Arsenal</h1>
+        <p class="reveal fade-up delay-100" style="color: var(--text-body);">
+            A comprehensive toolkit spanning documentation, business analysis, and specialized software.
+        </p>
+    </header>
+
+    <main class="skills-grid">
+        <!-- Documentation -->
+        <div class="skill-card reveal fade-up delay-100">
+            <h3 class="skill-category-title">
+                Documentation & Writing
+            </h3>
+            <div class="skill-tags">
+                <span class="skill-tag">SOP Creation</span>
+                <span class="skill-tag">Technical Writing</span>
+                <span class="skill-tag">User Manuals</span>
+                <span class="skill-tag">API References</span>
+                <span class="skill-tag">Release Notes</span>
+                <span class="skill-tag">Knowledge Bases</span>
+                <span class="skill-tag">Process Mapping</span>
+            </div>
+        </div>
+
+        <!-- Analysis -->
+        <div class="skill-card reveal fade-up delay-200">
+            <h3 class="skill-category-title">
+                Analysis & Strategy
+            </h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Business Analysis</span>
+                <span class="skill-tag">Requirement Gathering</span>
+                <span class="skill-tag">ISO Compliance (9001/27001)</span>
+                <span class="skill-tag">UAT Testing</span>
+                <span class="skill-tag">Project Management</span>
+                <span class="skill-tag">Gap Analysis</span>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card reveal fade-up delay-300">
+            <h3 class="skill-category-title">
+                Software & Platforms
+            </h3>
+            <div class="skill-tags">
+                <span class="skill-tag">MediaWiki</span>
+                <span class="skill-tag">Confluence</span>
+                <span class="skill-tag">Jira / Trello</span>
+                <span class="skill-tag">MS Visio</span>
+                <span class="skill-tag">Lucidchart</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">MS Office Suite</span>
+            </div>
+        </div>
+
+        <!-- Marketing -->
+        <div class="skill-card reveal fade-up delay-100">
+            <h3 class="skill-category-title">
+                Content & SEO
+            </h3>
+            <div class="skill-tags">
+                <span class="skill-tag">SEO Copywriting</span>
+                <span class="skill-tag">Ahrefs / SEMrush</span>
+                <span class="skill-tag">Technical Proposals</span>
+                <span class="skill-tag">Whitepapers</span>
+                <span class="skill-tag">Case Studies</span>
+                <span class="skill-tag">Content Strategy</span>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

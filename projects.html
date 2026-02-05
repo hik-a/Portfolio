@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Iqra Kainat</title>
+    
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Projects Specific Styles */
+        .page-header {
+            padding: 120px 20px 60px;
+            text-align: center;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            color: var(--text-highlight);
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--text-body);
+        }
+
+        .project-category {
+            max-width: var(--container-width);
+            margin: 0 auto 80px;
+            padding: 0 20px;
+        }
+
+        .category-label {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            color: var(--text-highlight);
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+        }
+
+        .category-label::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background: rgba(237, 191, 198, 0.2);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* === CARD STYLING FIXES === */
+        .project-card {
+            background: var(--bg-secondary);
+            border: 1px solid rgba(175, 141, 134, 0.1);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            text-decoration: none; /* Removes underline from all text */
+            color: var(--text-body); /* Forces text to use your brown/pink theme, NOT blue */
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--text-highlight);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .project-card h3 {
+            font-family: var(--font-heading);
+            color: var(--text-highlight); /* Highlight color for title */
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            color: var(--text-body); /* Ensures description is correct color */
+            flex-grow: 1;
+        }
+
+        .card-link {
+            color: var(--text-highlight);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-link:hover {
+            gap: 12px; 
+        }
+
+        @media (max-width: 768px) {
+            .project-grid {
+                display: flex;
+                flex-direction: column;
+            }
+            .category-label {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="header-placeholder"></nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1 class="section-title reveal blur-in">Selected Works</h1>
+        <p class="section-subtitle reveal fade-up delay-100">
+            A curated selection of technical documentation, ISO compliance frameworks, and business strategy papers.
+        </p>
+    </header>
+
+    <main>
+        <!-- ISO Documentation -->
+        <section class="project-category reveal fade-up delay-200">
+            <h2 class="category-label">ISO Standards</h2>
+            <div class="project-grid">
+                <a href="procurement-process.html" class="project-card">
+                    <div>
+                        <h3>PR.005 – Procurement Process</h3>
+                        <p>Detailed SOP for procurement cycles ensuring ISO 9001:2015 compliance.</p>
+                    </div>
+                    <span class="card-link">View Case Study &rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Business Documentation -->
+        <section class="project-category reveal fade-up delay-200">
+            <h2 class="category-label">Business Proposals</h2>
+            <div class="project-grid">
+                <a href="byd-big-data-platform.html" class="project-card">
+                    <div>
+                        <h3>BYD Big Data Platform</h3>
+                        <p>Technical proposal for Azure-based big data ingestion for EV manufacturing.</p>
+                    </div>
+                    <span class="card-link">View Proposal &rarr;</span>
+                </a>
+                <a href="ehcd-sow-dashboard.html" class="project-card">
+                    <div>
+                        <h3>EHCD Leadership Dashboard</h3>
+                        <p>Statement of Work defining governance and delivery for a digital portal.</p>
+                    </div>
+                    <span class="card-link">View SOW &rarr;</span>
+                </a>
+                <a href="bahria-town-water-metering.html" class="project-card">
+                    <div>
+                        <h3>Smart Water Metering</h3>
+                        <p>IoT-based infrastructure proposal for large-scale residential projects.</p>
+                    </div>
+                    <span class="card-link">View Proposal &rarr;</span>
+                </a>
+                <a href="dow-digital-twin-pilot.html" class="project-card">
+                    <div>
+                        <h3>Digital Twin Pilot – DOW</h3>
+                        <p>Strategy document for implementing digital twins in a clinical setting.</p>
+                    </div>
+                    <span class="card-link">View Strategy &rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Technical Documentation -->
+        <section class="project-category reveal fade-up delay-200">
+            <h2 class="category-label">Technical Manuals</h2>
+            <div class="project-grid">
+                <a href="tfg-fleet-intelligence.html" class="project-card">
+                    <div>
+                        <h3>Fleet Intelligence Architecture</h3>
+                        <p>High-Level Design (HLD) covering IoT telemetry and data visualization.</p>
+                    </div>
+                    <span class="card-link">View Docs &rarr;</span>
+                </a>
+                <a href="esg-dashboard-user-manual.html" class="project-card">
+                    <div>
+                        <h3>ESG Dashboard Manual</h3>
+                        <p>User guide for managing Environmental, Social, and Governance metrics.</p>
+                    </div>
+                    <span class="card-link">View Manual &rarr;</span>
+                </a>
+                <a href="fms-user-manual.html" class="project-card">
+                    <div>
+                        <h3>Fleet Management Manual</h3>
+                        <p>End-user guide for vehicle tracking software navigation.</p>
+                    </div>
+                    <span class="card-link">View Manual &rarr;</span>
+                </a>
+                <a href="twinscape-smart-hospitals-hld.html" class="project-card">
+                    <div>
+                        <h3>Twinscape Smart Hospitals</h3>
+                        <p>HLD outlining security protocols for smart healthcare facilities.</p>
+                    </div>
+                    <span class="card-link">View HLD &rarr;</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

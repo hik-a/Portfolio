@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Water Metering | Iqra Kainat</title> <!-- 1. Change Title -->
+    
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* TEMPLATE SPECIFIC STYLES - DO NOT EDIT THIS BLOCK */
+        .project-hero {
+            padding: 120px 20px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .project-badges { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .p-badge { 
+            background: rgba(237, 191, 198, 0.1); 
+            color: var(--text-highlight); 
+            padding: 5px 12px; 
+            border-radius: 4px; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+        }
+        .p-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--text-highlight);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .p-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+        .project-content {
+            max-width: 900px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
+        .info-block {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            margin-bottom: 40px;
+            border: 1px solid rgba(175, 141, 134, 0.1);
+        }
+        .info-block h2 {
+            font-family: var(--font-heading);
+            color: var(--text-highlight);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(237, 191, 198, 0.1);
+            padding-bottom: 15px;
+        }
+        .info-block p { color: var(--text-body); margin-bottom: 15px; }
+        .info-block ul { list-style: none; padding: 0; }
+        .info-block li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-body);
+        }
+        .info-block li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--text-highlight);
+            font-weight: bold;
+        }
+        .note-box {
+            border-left: 4px solid var(--accent-medium);
+            background: rgba(95, 72, 66, 0.1);
+            padding: 20px;
+            font-style: italic;
+            color: var(--text-body);
+            margin-top: 40px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-highlight);
+            font-weight: 600;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="header-placeholder"></nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="project-hero reveal blur-in">
+        <div class="project-badges">
+            <!-- Change Tags Here -->
+            <span class="p-badge">Business Proposal</span>
+            <span class="p-badge">Smart Utility</span>
+            <span class="p-badge">IoT</span>
+        </div>
+        <!-- Change Title Here -->
+        <h1 class="p-title">Smart Water Metering – Bahria Town</h1>
+        <!-- Change Subtitle Here -->
+        <p class="p-subtitle">
+            Deploying ultrasonic IoT metering infrastructure for one of Pakistan's largest residential developers.
+        </p>
+    </header>
+
+    <main class="project-content">
+        
+        <!-- 3. SECTION: Executive Summary -->
+        <div class="info-block reveal fade-up delay-100">
+            <h2>Executive Summary</h2>
+            <p>
+                This strategic proposal outlines the transition from mechanical water meters to advanced ultrasonic IoT-enabled metering across Bahria Town's residential and commercial sectors.
+            </p>
+            <p>
+                The primary goal is to eliminate non-revenue water (NRW) loss, automate the billing cycle, and provide real-time leakage detection for property management.
+            </p>
+        </div>
+
+        <!-- 4. SECTION: Technical Scope -->
+        <div class="info-block reveal fade-up delay-200">
+            <h2>Technical Scope & Architecture</h2>
+            <ul>
+                <li><strong>IoT Connectivity:</strong> Private LoRaWAN network establishment for long-range, low-power data transmission.</li>
+                <li><strong>Data Management:</strong> Cloud-based MDM (Meter Data Management) platform with automated SQL ingestion.</li>
+                <li><strong>End-User Portal:</strong> Consumer-facing mobile application for real-time monitoring and digital payments.</li>
+            </ul>
+        </div>
+
+        <!-- 5. SECTION: Strategic Impact -->
+        <div class="info-block reveal fade-up delay-300">
+            <h2>Strategic Impact</h2>
+            <p>By implementing this framework, Bahria Town gains critical infrastructure intelligence:</p>
+            <ul>
+                <li>Reduction in non-technical water loss by an estimated 18%.</li>
+                <li>Predictive maintenance alerts for pipe bursts using pressure sensor data.</li>
+                <li>Unified billing cycle that integrates seamlessly with existing ERP systems.</li>
+            </ul>
+        </div>
+
+        <!-- 6. Confidentiality Note -->
+        <div class="note-box reveal fade-up delay-300">
+            <strong>Confidentiality Note:</strong> Full hardware datasheets, financial modeling, and proprietary network topology maps are available for review under formal NDA.
+        </div>
+
+        <a href="projects.html" class="back-link reveal fade-up delay-300">
+            ← Back to Portfolio
+        </a>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

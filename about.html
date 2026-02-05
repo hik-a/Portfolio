@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Iqra Kainat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 1. Global Font Audit - Synced for Brand Consistency */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 2. Navigation Audit - High Specificity Hover Fix */
+        nav {
+            background: rgba(15, 23, 42, 0.95) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 0 20px;
+        }
+
+        nav h2 a { color: #f8fafc !important; text-decoration: none; font-weight: 700; font-size: 1.5rem; }
+
+        nav ul { display: flex; list-style: none; gap: 28px; margin: 0; padding: 0; }
+
+        nav ul li a {
+            color: #94a3b8 !important;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+
+        /* Robust Hover State */
+        nav ul li a:hover {
+            color: #60a5fa !important;
+            transform: translateY(-2px);
+            text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+        }
+
+        /* 3. Layout Audit - Premium Spacing */
+        .about-content {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .profile-badge {
+            display: inline-block;
+            background: rgba(96, 165, 250, 0.1);
+            color: #60a5fa;
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        /* 4. Footer Audit - Synced with Home Page */
+        footer { 
+            background: #020617; 
+            padding: 60px 20px; 
+            text-align: center; 
+            color: #64748b; 
+            border-top: 1px solid #ffffff0d;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <h2><a href="index.html">Iqra Kainat</a></h2>
+            <ul>
+                <li><a href="about.html" style="color: #60a5fa !important;">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="about-content">
+        <span class="profile-badge">The Story Behind the Documents</span>
+        <h1 class="text-5xl font-extrabold mb-8 tracking-tight">I bridge the gap between complex science and clear communication.</h1>
+        
+        <div class="space-y-6 text-slate-300 text-lg leading-relaxed">
+            <p>
+                My journey into Technical Writing wasn't traditional. With a foundational background in <strong>Biochemistry</strong>, 
+                I developed a deep respect for precision and data. I learned early on that even the most groundbreaking research 
+                is only as valuable as the clarity with which it is communicated.
+            </p>
+            
+            <p>
+                As I moved into <strong>Project Management</strong> (MS), I realized my true passion: transforming high-level technical 
+                jargon into actionable, human-centered documentation. Whether it’s documenting Azure-based architectures or 
+                crafting ISO-compliant SOPs, I focus on the "User Experience" of reading.
+            </p>
+
+            <div class="py-8 grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-4">My Philosophy</h3>
+                    <p class="text-sm">If a developer or a stakeholder has to ask a question that should have been in the manual, my job isn't done. Documentation should be proactive, not reactive.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-4">My Methodology</h3>
+                    <p class="text-sm">I combine the analytical rigor of a scientist with the strategic vision of a project manager to create documentation that scales with the business.</p>
+                </div>
+            </div>
+
+            <p>
+                Currently, I am working with <strong>PLC Group</strong> as a Technical Writer, helping standardize software modules 
+                and knowledge management systems using platforms like MediaWiki to ensure that technical knowledge never stays 
+                trapped in a single department.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Iqra Kainat. Professional Portfolio.</p>
+    </footer>
+
+</body>
+</html>

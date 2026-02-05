@@ -1,0 +1,280 @@
+/* =========================
+   RESET & BASE
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                 "Segoe UI", Helvetica, Arial, sans-serif;
+  
+    background: #0f172a; /* slightly darker than before */
+    color: #111827;      /* strong dark text */
+  
+    line-height: 1.75;
+  }
+  
+  /* =========================
+     NAVBAR
+  ========================= */
+  
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  
+    background: #ffffff;
+    padding: 18px 32px;
+  
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  nav h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  /* =========================
+     CONTENT WRAPPER
+  ========================= */
+  
+  .content {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;   /* was probably 80px */
+  }
+  
+  
+  /* =========================
+     HERO SECTION (FIXED VISIBILITY)
+  ========================= */
+  
+  .hero {
+    background:
+      linear-gradient(
+        rgba(255, 255, 255, 0.92),
+        rgba(255, 255, 255, 0.92)
+      ),
+      url("../assets/images/background.jpg");
+  
+    background-size: cover;
+    background-position: center;
+  
+    padding: 160px 24px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    margin-bottom: 12px;
+  }
+  
+  .hero p {
+    margin-top: 0;
+    max-width: 700px;
+  }
+  
+  
+  .hero p {
+    font-size: 20px;
+    color: #374151; /* readable grey */
+    max-width: 720px;
+    margin: auto;
+  }
+  
+  /* =========================
+     HEADINGS & TEXT
+  ========================= */
+  
+  h1 {
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #111827;
+    margin-bottom: 26px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #111827;
+  
+    margin-top: 80px;
+    margin-bottom: 24px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 6px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #1f2937; /* DARKER body text */
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 40px;
+  }
+  /* =========================
+   BACK BUTTON (APPLE STYLE)
+========================= */
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 32px;
+  
+    font-size: 14px;
+    font-weight: 500;
+    color: #0057d9;
+  
+    padding: 6px 12px;
+    border-radius: 999px;
+  
+    transition: background 0.25s ease, transform 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background: rgba(0, 87, 217, 0.08);
+    transform: translateX(-2px);
+  }
+  /* =========================
+     PROJECT CARDS (CLEAR & ELEGANT)
+  ========================= */
+  
+  .project {
+    background: #ffffff;
+    border-radius: 18px;
+  
+    padding: 32px;
+    margin-bottom: 28px;
+  
+    border: 1px solid #e5e7eb;
+  
+    box-shadow:
+      0 6px 20px rgba(0,0,0,0.06);
+  
+    transition:
+      transform 0.4s ease,
+      box-shadow 0.4s ease;
+  }
+  .project-grid {
+    gap: 1x;   /* was 24–32px */
+  }
+  .project-card {
+    padding: 1px;   /* was 24–32px */
+  }
+  
+  
+  .project:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 12px 32px rgba(0,0,0,0.10);
+  }
+  
+  /* =========================
+     LINKS (APPLE BLUE, CLEAR)
+  ========================= */
+  
+  a {
+    color: #0057d9;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* =========================
+     LISTS
+  ========================= */
+  p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+  
+  ul {
+    margin: 12px 0 20px;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 6px;
+  }
+  
+  
+  /* =========================
+     NOTES / CONFIDENTIALITY
+  ========================= */
+  
+  .note {
+    margin-top: 32px;
+    font-size: 14px;
+    color: #6b7280;
+    font-style: italic;
+  }
+  
+  /* =========================
+     BACK LINK
+  ========================= */
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 40px;
+  }
+  
+  /* =========================
+     SIMPLE ANIMATION (SAFE)
+  ========================= */
+  
+  .project {
+    animation: fadeUp 0.5s ease forwards;
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* =========================
+     RESPONSIVE (MOBILE)
+  ========================= */
+  
+  @media (max-width: 768px) {
+  
+    .hero h1 {
+      font-size: 40px;
+    }
+  
+    h1 {
+        margin-bottom: 16px;
+      }
+      
+      h2 {
+        margin-top: 32px;
+        margin-bottom: 12px;
+      }
+      
+      h3 {
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+      
+  }
+
+    

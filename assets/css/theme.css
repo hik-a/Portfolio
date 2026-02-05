@@ -1,0 +1,39 @@
+:root {
+    /* --- COLOR PALETTE (Deep Navy / Slate / Blue) --- */
+    
+    /* Deepest Background (Main Body - Slate 900) */
+    --bg-primary: #0f172a;
+    
+    /* Secondary Background (Cards / Nav - Slate 800) */
+    --bg-secondary: #1e293b;
+    
+    /* Footer Background (Near Black - Slate 950) */
+    --bg-footer: #020617;
+    
+    /* Accent Color (Bright Blue - Blue 400) */
+    --text-highlight: #60a5fa; 
+    
+    /* Headings (Near White - Slate 50) */
+    --text-heading: #f8fafc;
+    
+    /* Body Text (Soft Gray - Slate 400) */
+    --text-body: #94a3b8;
+    
+    /* Borders (Subtle Blue-White) */
+    --border-color: rgba(96, 165, 250, 0.1);
+    
+    /* Badges (Blue Tint) */
+    --badge-bg: rgba(96, 165, 250, 0.1);
+    
+    /* Glow Effects */
+    --glow-color: rgba(96, 165, 250, 0.5);
+
+    /* --- TYPOGRAPHY --- */
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* --- SPACING & SIZES --- */
+    --nav-height: 80px;
+    --container-width: 1100px;
+    --border-radius: 16px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Iqra Kainat</title>
+    
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .contact-wrapper {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            color: var(--text-highlight);
+            margin-bottom: 20px;
+        }
+
+        .contact-card {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(175, 141, 134, 0.1);
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(237, 191, 198, 0.1);
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            background: rgba(237, 191, 198, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-highlight);
+            flex-shrink: 0;
+        }
+
+        .info h3 {
+            font-family: var(--font-heading);
+            color: var(--text-highlight);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .info p, .info a {
+            color: var(--text-body);
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .info a:hover {
+            color: var(--text-highlight);
+        }
+
+        @media (max-width: 768px) {
+            .contact-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="header-placeholder"></nav>
+
+    <main class="contact-wrapper">
+        <div class="contact-container">
+            <h1 class="contact-title reveal blur-in">Get In Touch</h1>
+            <p class="reveal fade-up delay-100" style="color: var(--text-body);">
+                Reach out for collaborations, documentation inquiries, or project management consultation.
+            </p>
+
+            <div class="contact-card reveal fade-up delay-200">
+                <!-- Email -->
+                <div class="contact-item">
+                    <div class="icon-box">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <div class="info">
+                        <h3>Email Me</h3>
+                        <p>iqrakainat990@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="contact-item">
+                    <div class="icon-box">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </div>
+                    <div class="info">
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/iqra-kainat-2612ik" target="_blank">linkedin.com/in/iqra-kainat-2612ik</a>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-item">
+                    <div class="icon-box">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <div class="info">
+                        <h3>Location</h3>
+                        <p>Islamabad, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

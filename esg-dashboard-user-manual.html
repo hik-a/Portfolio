@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG Dashboard – User Manual | Iqra Kainat</title>
+    
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* === TEMPLATE STYLES (Reusable) === */
+        .project-hero {
+            padding: 120px 20px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .header-badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .p-badge { 
+            background: rgba(237, 191, 198, 0.1); 
+            color: var(--text-highlight); 
+            padding: 6px 14px; 
+            border-radius: 50px; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            border: 1px solid rgba(237, 191, 198, 0.2);
+        }
+
+        .p-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--text-highlight);
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+
+        .p-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-body);
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        .project-content {
+            max-width: 900px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
+
+        .info-block {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            margin-bottom: 40px;
+            border: 1px solid rgba(175, 141, 134, 0.1);
+        }
+
+        .info-block h2 {
+            font-family: var(--font-heading);
+            color: var(--text-highlight);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(237, 191, 198, 0.1);
+            padding-bottom: 15px;
+        }
+
+        .info-block p { color: var(--text-body); margin-bottom: 15px; }
+        .info-block ul { list-style: none; padding: 0; }
+        .info-block li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-body);
+        }
+        .info-block li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--text-highlight);
+            font-weight: bold;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .split-col h3 {
+            color: var(--text-highlight);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        .split-col h3:first-child { margin-top: 0; }
+
+        .component-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(175, 141, 134, 0.2);
+            color: var(--text-body);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .tech-badge:hover {
+            border-color: var(--text-highlight);
+            color: var(--text-highlight);
+            background: rgba(237, 191, 198, 0.05);
+        }
+
+        .note-box {
+            border-left: 3px solid var(--accent-medium);
+            background: rgba(95, 72, 66, 0.1);
+            padding: 25px;
+            font-style: italic;
+            color: rgba(175, 141, 134, 0.9);
+            margin-top: 40px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-highlight);
+            font-weight: 600;
+            margin-top: 50px;
+            padding: 10px 20px;
+            border: 1px solid rgba(237, 191, 198, 0.3);
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            background: var(--text-highlight);
+            color: var(--bg-primary);
+        }
+
+        @media (max-width: 768px) {
+            .split-grid { grid-template-columns: 1fr; gap: 30px; }
+            .project-hero { padding-top: 100px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="header-placeholder"></nav>
+
+    <!-- HERO SECTION -->
+    <header class="project-hero reveal blur-in">
+        <div class="header-badges">
+            <span class="p-badge">User Manual</span>
+            <span class="p-badge">Sustainability</span>
+            <span class="p-badge">ESG</span>
+        </div>
+        
+        <h1 class="p-title">ESG Performance Dashboard</h1>
+        
+        <p class="p-subtitle">
+            A comprehensive operational guide for monitoring and reporting Environmental, Social, and Governance metrics across the enterprise.
+        </p>
+    </header>
+
+    <main class="project-content">
+        
+        <!-- Document Overview -->
+        <div class="info-block reveal fade-up delay-100">
+            <h2>Document Overview</h2>
+            <p>
+                This user manual provides end-to-end guidance for navigating the Enterprise ESG Dashboard. It translates complex sustainability frameworks into actionable steps for department heads and sustainability officers, ensuring consistent data reporting across 12 core sustainability modules.
+            </p>
+        </div>
+
+        <!-- Strategy & Standards (Split Grid) -->
+        <div class="info-block reveal fade-up delay-200">
+            <h2>Execution Strategy</h2>
+            <div class="split-grid">
+                <!-- Left: My Contributions -->
+                <div class="split-col">
+                    <h3>My Contributions</h3>
+                    <ul>
+                        <li><strong>End-to-End Documentation:</strong> Authored the complete manual covering data ingestion and report generation.</li>
+                        <li><strong>KPI Definition:</strong> Collaborated with teams to define business logic for 40+ ESG metrics.</li>
+                        <li><strong>Visual Journey Mapping:</strong> Designed flowcharts to reduce the user learning curve.</li>
+                        <li><strong>Stakeholder Alignment:</strong> Translated technical requirements for executive leadership.</li>
+                    </ul>
+                </div>
+
+                <!-- Right: Frameworks -->
+                <div class="split-col">
+                    <h3>Technical Standards</h3>
+                    <ul>
+                        <li><strong>GRI Standards:</strong> Global Reporting Initiative framework alignment.</li>
+                        <li><strong>SASB Compliance:</strong> Sustainability Accounting Standards Board metrics.</li>
+                        <li><strong>Data Governance:</strong> Protocols for data accuracy and audit trails.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools Tag Cloud -->
+        <div class="info-block reveal fade-up delay-300">
+            <h2>Tools & Technologies</h2>
+            <div class="component-tags">
+                <span class="tech-badge">Power BI Embedded</span>
+                <span class="tech-badge">GRI Standards</span>
+                <span class="tech-badge">SASB Compliance</span>
+                <span class="tech-badge">Scenario Mapping</span>
+                <span class="tech-badge">Data Governance</span>
+                <span class="tech-badge">UI/UX Documentation</span>
+            </div>
+        </div>
+
+        <!-- Confidentiality -->
+        <div class="note-box reveal fade-up delay-300">
+            <strong>Confidentiality Note:</strong> Detailed compliance mappings, internal data sources, and proprietary KPI formulas have been redacted or generalized for confidentiality.
+        </div>
+
+        <a href="projects.html" class="back-link reveal fade-up delay-300">
+            ← Back to Portfolio
+        </a>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
